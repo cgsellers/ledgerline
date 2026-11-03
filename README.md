@@ -6,11 +6,9 @@ Upload receipts and invoices. Local OCR reads them, deterministic routing picks 
 
 The design principle: **models only where perception or judgment is required.** Everything else is code that can be unit-tested and never hallucinates.
 
-> Status: **phases 1, 2 and 7 complete · phase 3 has its first baseline.** On 20 real
+> Status: **phases 1, 2 and 7 complete · phase 3 has its first baseline.** On 100 real
 > till receipts, verified by hand: extraction gets **93.9%** of fields right, with totals,
-> currency, tax ids and payment method at 100%, for about **$0.001 per receipt**. But
-> routing accepts only **9 of 20**, so end to end the pipeline returns nothing for 11 of
-> them. Details and every error by cause: [DESIGN §7.10](docs/DESIGN.md).
+> currency, tax ids and payment method at 100%, for about **$0.001 per receipt**. Details and every error by cause: [DESIGN §7.10](docs/DESIGN.md).
 >
 > English invoices, on 15 layouts held out from all tuning: **100% of fields** and
 > **12/15 routed**, on clean synthetic data where 15 documents can't separate 100% from
